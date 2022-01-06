@@ -10,6 +10,7 @@ $logo-color:#ecc236;
 }
 body {
     margin:0;
+    font-family:$main-font;
 }
 .banner {
     background-image: linear-gradient(rgba(0, 0, 0, 0.527), rgba(0, 0, 0, 0.8)), url("https://images.pexels.com/photos/1422286/pexels-photo-1422286.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260");
@@ -17,7 +18,6 @@ body {
     height:100vh;
     background-position: center center;
     background-size: cover;
-    font-family:$main-font;
 }
 .container {
     height:100%;
@@ -81,26 +81,44 @@ nav {
     display:flex;
     flex-direction:column;
     align-items:center;
+    justify-content:center;
+    height:60vh;
 }
 .section-header {
+    padding-top:5rem;
     text-align:center;
     justify-content:center;
     font-family:$main-font;
 }
 .section-header h1 {
-    font-size:2.4rem;
+    font-size:2.6rem;
     text-transform:uppercase;
     margin:0;
 }
 .section-header h2 {
-    font-size:0.7rem;
-    text-transform:uppercase;
+    font-size:1rem;
     margin:0.7rem 0;
     color:grey;
+    font-style:italic;
 }
 .services-content-whole {
-    padding-top:2rem;
+    padding-top:3.5rem;
 }
 .services-content {
     text-align:center;
+}
+i {
+    color:$logo-color;
+    display: inline-block;
+    border-radius: 125px;
+    box-shadow: 0 0 0 5px $logo-color;
+    padding: 0.5em 0.5em;
+}
+.services-content h6 {
+    font-size:1.1rem;
+    margin:0;
+    padding:1.7rem 0;
+}
+.services-content p {
+    margin:0;
 }
