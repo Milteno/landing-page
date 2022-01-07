@@ -12,6 +12,12 @@ body {
     margin:0;
     font-family:$main-font;
 }
+nav .row {
+    margin:0;
+    width:fit-content;
+    align-self: center;
+    width:100%;
+}
 .banner {
     background-image: linear-gradient(rgba(0, 0, 0, 0.527), rgba(0, 0, 0, 0.8)), url("https://images.pexels.com/photos/1422286/pexels-photo-1422286.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260");
     width:100%;
@@ -24,17 +30,25 @@ body {
 }
 nav {
     padding-top:2rem;
+    width:100%;
+    display:flex;
+    justify-content:center;
 }
 .logo {
+    display:flex;
+    justify-content:center;
     font-family:$logo-font, cursive;
     color:$logo-color;
     font-size:3.2rem;
 }
 .navigation {
+    display:flex;
     padding-top:1rem;
     list-style-type: none;
     margin: 0;
     font-size:1.2rem;
+    justify-content:center;
+    padding-left:0px;
 }
 .navigation li {
     display:inline-block;
@@ -77,15 +91,8 @@ nav {
     font-size:1.4rem;
     font-weight:bold;
 }
-.services {
-    display:flex;
-    flex-direction:column;
-    align-items:center;
-    justify-content:center;
-    height:60vh;
-}
 .section-header {
-    padding-top:5rem;
+    padding:5rem 0;
     text-align:center;
     justify-content:center;
     font-family:$main-font;
@@ -101,11 +108,9 @@ nav {
     color:grey;
     font-style:italic;
 }
-.services-content-whole {
-    padding-top:3.5rem;
-}
 .services-content {
     text-align:center;
+    padding-bottom:4rem;
 }
 i {
     color:$logo-color;
@@ -121,4 +126,26 @@ i {
 }
 .services-content p {
     margin:0;
+}
+.our-portfolio {
+    background-color:#e6e6e6;
+}
+.card {
+    background-color:$main-font-color;
+}
+.card-img {
+    width:100%;
+    height:100%;
+}
+.card-body {
+    text-align:center;
+}
+.card-body h1{
+    margin:0;
+    padding:1rem 0 0 0;
+}
+.card-body p {
+    color:grey; 
+    margin:0;
+    padding:0.4rem 0 1rem 0;
 }
