@@ -21,7 +21,6 @@ nav .row {
 .banner {
     background-image: linear-gradient(rgba(0, 0, 0, 0.527), rgba(0, 0, 0, 0.8)), url("https://images.pexels.com/photos/1422286/pexels-photo-1422286.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260");
     width:100%;
-    height:100vh;
     background-position: center center;
     background-size: cover;
 }
@@ -61,13 +60,13 @@ nav {
 }
 .banner-content {
     width:100%;
-    height:100%;
     display:flex;
     justify-content:center;
     align-items:center;
     text-align:center;
     flex-direction:column;
     color:$main-font-color;
+    padding:28vh 0;
 }
 .banner-content h1{
     font-size:6rem;
@@ -91,6 +90,9 @@ nav {
     font-size:1.4rem;
     font-weight:bold;
 }
+.our-portfolio {
+    padding-bottom:8rem;
+}
 .section-header {
     padding:5rem 0;
     text-align:center;
@@ -112,7 +114,7 @@ nav {
     text-align:center;
     padding-bottom:4rem;
 }
-i {
+.services-content i {
     color:$logo-color;
     display: inline-block;
     border-radius: 125px;
@@ -132,10 +134,11 @@ i {
 }
 .card {
     background-color:$main-font-color;
+    margin-bottom:2rem;
 }
 .card-img {
     width:100%;
-    height:100%;
+    height:233px;
 }
 .card-body {
     text-align:center;
@@ -148,4 +151,62 @@ i {
     color:grey; 
     margin:0;
     padding:0.4rem 0 1rem 0;
+}
+.footer-media {
+    text-decoration: none;
+    list-style-type: none;
+    padding-left:5rem;
+}
+.footer-media li{
+    display:inline-block;
+}
+.footer-content {
+    padding: 2.7rem 0;
+}
+.footer-media i {
+    font-size: 25px;
+    background: grey;
+    width: 45px;
+    height: 45px;
+    line-height: 45px;
+    color: $main-font-color;
+    border-radius: 50%;
+    text-align:center;
+}
+.footer-content div:first-of-type {
+    text-align:center;
+    justify-content:center;
+    line-height: 5rem;
+}   
+@media (max-width: 994px) and (max-width: 1200px)  {
+    .card-img {
+        max-height:200px;
+    }
+    .footer-media {
+        text-align:center;
+        justify-content:center;
+        padding-left:0;
+    }
+}
+@media (max-width: 600px)  {
+    .navigation{
+        align-items:center;
+        flex-direction:column;
+    }
+    .navigation li {
+        line-height: 3.5rem;
+        margin-left: 0px;
+    }
+    .banner-content {
+        padding:14vh 0;
+    }
+    .banner-content h2 {
+        font-size:2rem;
+    }
+    .banner-content h1 {
+        font-size:4rem;
+    }
+    .footer-content div:first-of-type {
+        line-height:3rem;
+    }
 }
